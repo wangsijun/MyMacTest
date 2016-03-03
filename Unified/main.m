@@ -21,7 +21,7 @@ int main(int argc, const char * argv[]) {
         NSObject<IAProductable>* p = user;
         NSLog(@"当前用户的名字为：%@",[p getProductName]);
         NSMutableString *name = [[NSMutableString alloc] initWithString:@"你好"];
-        [name appendString:@"wangsijun"];
+        [name appendFormat:@"wangsijun %d",@"测试阶段"];
         NSLog(name);
     }
     return 0;
